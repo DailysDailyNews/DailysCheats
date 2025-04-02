@@ -1,0 +1,106 @@
+Linux Cheats by {Daily Investor}}} {
+pwd - print working directory
+cd - change the directorty
+ls -l
+find
+cat
+head
+du -sh
+top or htop
+uname -a
+df -headfree -headstat
+chown
+chmod
+tail -findfsck
+e2fsck
+xfs_repair
+btrfs
+fdisk -Linuxmkfs.<fstype>
+parted
+gdisk
+mount
+umount
+lsof
+dd
+badblocks
+smartctl
+hdparm
+resize2fs
+lvmdiskscan
+lvdisplay
+vgdisplay
+pvdisplay
+lvcreate
+vgextend
+pvcreate
+pvmove
+ifconfig
+ip
+ping
+traceroute
+netstat
+ss
+nmap
+tcpdump
+route
+hostname
+dig
+nslookup
+curl
+wget
+ssh
+scp
+rsync
+iptables
+ip6tables
+ufw
+dmesg
+journalctl
+systemctl
+service
+ps aux
+kill
+pkill
+free -h
+uptime
+wgetlast
+date
+heclock
+timedatectl
+locale
+dpkg
+rpm
+apt
+yum
+dnf
+useradd
+userdel
+passwd
+useradd
+userdel
+chown
+chattr
+su
+sudo
+visudo
+crontab
+backup
+at
+restore
+rsnapshot
+tar
+gzip
+bzip
+xz
+unzip
+gunzip
+bunzip2
+unxz
+diff
+patch
+awk
+sed
+getent passwdwho
+net useraddwmic useraccount get name
+ls -la -detailed list
+lasetop -a -check loop activity
