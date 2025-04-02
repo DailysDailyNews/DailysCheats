@@ -8,14 +8,15 @@ head
 du -sh
 top or htop
 uname -a
-df -headfree -headstat
+df -h
 chown
 chmod
 tail -findfsck
 e2fsck
 xfs_repair
 btrfs
-fdisk -Linuxmkfs.<fstype>
+fdisk -L
+linuxmkfs.<fstype>
 parted
 gdisk
 mount
@@ -101,6 +102,6 @@ patch
 awk
 sed
 getent passwdwho
-net useraddwmic useraccount get name
+net user add wmic user account get name
 ls -la -detailed list
 lasetop -a -check loop activity
