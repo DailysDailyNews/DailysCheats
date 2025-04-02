@@ -1,0 +1,17 @@
+//Port Definitions  {Daily Investors}
+
+1. FTP Port 21
+2. Shh - Port 22
+3. Remote - Port 3389
+4. BIOS - 137, 138, 139
+5.Telnet - 23
+6. DNS - 53, UDP 53
+7.VPN - 443
+8.Phone Calls: SIP
+               RTP
+               UDP ==== 10,000 to 65535
+9.SMTP - 25
+10.POP - 110
+11. IMAP - 143
+12. http - 80
+13. https - 443
