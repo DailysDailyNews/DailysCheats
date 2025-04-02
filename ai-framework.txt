@@ -1,0 +1,57 @@
+//How to Make a AI {Daily Investors}
+
+//First we have to create a virtual enviroment
+1. First install Python
+    python -m venv venv
+	
+2.Activate:
+	Windows: myenv\Scripts\activate
+	Linuz: source myenv/bin/activate
+	
+3.Install packages
+		pip install tensorflow, torch, scikit-learn, etc
+		
+4. Create your own code.	
+		python main.py
+		
+
+//Now ways to play in your local enviroment
+1.Image Classification
+			1.Pre-trained models exist, such as HuggingFace, MobileNet, ResNet
+			2. Custom build
+			
+2.Natural Language Processing
+			1. Program yourself, or hire Daily lol
+			2. Use pre-built sentiment analysis on your text data with models such as Bert, GPT, etc
+			3. Try transformers, or RNNS
+			
+//Try with Chatbots
+	1.Build using pre-built such as ChattrBot, or customise your own
+
+//Reccomendation System
+	1. Convert speech to text using models like DeepSpeech, Google-Text, etc
+
+//Generative Adveersarial Networks
+	1. Generate realistic images, or text GANS
+
+//Time Series Forecasting
+	1.Predict stock prices, movies, age by building custom or using ARIMA, LSTM, etc
+
+//Autonomous Driving
+	1.Simulate
+	2. Reinforce
+	
+//Facial Recognition
+Implemtent into Security
+
+
+
+//If your reading this, and would liek custom Projects made and delivered instantly. Contact me at
+https://soloist.ai/dailyinvestors	
+	
+	
+			
+		
+		
+		
+	
