@@ -53,6 +53,10 @@
 13. Plugins
     1. Wireshark offers plugin availability, and focuses on using the LUA language.
     2. As java and Python both advance through-out the globe, this is brining in new additions on a "Daily" basis.
-    3. A varity of vulnerability scanners including "nmap" work well side by side with "Wireshark"	
+    3. A varity of vulnerability scanners including "nmap" work well side by side with "Wireshark"
+
+14. Notes
+    1. With wireshark we can alayze user-agent strings to determine if "Browser" is outdated.
+    2. Outdated "Browsers" can cause you to fall being "victim" by file inclusion attacks.
 
 	
