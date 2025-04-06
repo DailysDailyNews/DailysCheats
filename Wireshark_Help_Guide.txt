@@ -1,0 +1,58 @@
+//Wireshark Tutorial by { Daily Investors }
+1. Wireshark is a Network and Packet Analyzer
+
+2. This is a essential and must have for any "Bussiness or Home Owner"
+
+3. With its deeper catching technolgies, this essential tool can pinpoint unauthorized users, agents, and "HOST" info.
+
+4. To Begin capturing select: "Capture"
+
+5. To select multiple networks hold the "shift key"
+
+6. Now in the Wireshark Capture Interfaces window, select Start.
+   Or select the shark fin on the left side of the Wireshark toolbar, press ​Ctrl+E, or double-click the network.
+   
+7. Now select File > Save As or choose an Export option to record the capture.
+ 
+8. To stop capturing, press Ctrl+E. 
+   Or, go to the Wireshark toolbar and select the red Stop button.
+   
+9. How to view the captured packets?   
+   1. The captured data interface contains three main sections:
+	The packet list pane (the top section)
+	The packet details pane (the middle section)
+	The packet bytes pane (the bottom section)
+   2. The packet list pane, located at the top of the window, shows all packets found in the active capture file. 
+      Each packet has its own row and corresponding number assigned to it, along with each of these data points:
+      This field indicates which packets are part of the same conversation. It remains blank until you select a packet.
+      The timestamp of when the packet was captured is displayed in this column. 
+	  The default format is the number of seconds or partial seconds since this specific capture file was first created.
+      This column contains the address (IP or other) where the packet originated.
+      This column contains the address that the packet is being sent to.
+      The packet's protocol name, such as TCP, can be found in this column.
+      The packet length, in bytes, is displayed in this column.
+      Here you can find additional details to help both in offense, defense.
+      To change the time format to something more useful (such as the actual time of day), select View > Time Display Format. 
+	  
+10.	Wireshark provides a large number of predefined filters by default. 
+    To use one of these existing filters, enter its name in the Apply a display filter entry field located below the Wireshark toolbar.
+	1.Or in the Enter a capture filter field located in the center of the welcome screen.
+      Example: If you want to display TCP packets, just type tcp.  
+	  
+    2.The next way is to choose a filter. Select the bookmark on the left side of the entry field. 
+	  Choose Manage Filter Expressions or Manage Display Filters to add, remove, or edit filters.	
+	  There are also options to access your history.
+
+11. Wireshark helps use a varity of different colors, to help you easily access any network.
+    It comes with a estimated amount of 20+ different assortment colors. Making it easier to filter the good from the bad.
+	
+12. Static Drop Down Menu
+   1. Included in this menu: "Size and timing information" about the capture file.
+      Dozens of charts and graphs ranging in topic from packet conversation breakdowns to load distribution of HTTP/HTTPS requests.
+	  
+13. Plugins
+    1. Wireshark offers plugin availability, and focuses on using the LUA language.
+    2. As java and Python both advance through-out the globe, this is brining in new additions on a "Daily" basis.
+    3. A varity of vulnerability scanners including "nmap" work well side by side with "Wireshark"	
+
+	
