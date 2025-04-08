@@ -1,0 +1,28 @@
+// "Decrypting and Hashing" by { Daily Investors }
+
+1. Hashcat { Both in Linux, and windows. Perfect to automate with Python }
+2. CrackStation { crackstation.net }
+3. MD5Online { md5online.org }
+4. Hashes.com { hashes.com }
+5. OpenSSL { sudo apt install openssl }
+   Example: sudo openssl md5 <file>
+6. Linux: md5, sha256sum { Both normally installed }
+7. John The Ripper { sudo apt install john }
+8. HashCalc: { Windows Program }
+9. WinMD5Free { Windows Program }
+10. HashMyFiles { NirSoft }
+11. Cygwin { Windows Sub-Linux }
+12. Online Hash Cracker: { onlinehashcracker.com }
+13. TunnelsUp { tunnelsup.com }
+14. Hash Analyzer { hashanalyzer.com }
+15. Hash Cracker { hashcracker.com }
+16. GPUPush { gpuhash.me }
+17. Rainbow Crack Online { rainbowcrack.online }
+18. Web Cracker { webcracker.io }
+19. SSL Shopper { www.sslshopper.com/certificate-decoder.html }
+20. GoDaddy { https://ssltools.godaddy.com/view/certDecoder.html }
+21. DigiCert { Search Online }
+22. Red Kestrel { https://redkestrel.co.uk/tools/decoder }
+23. CertLogik { https://certlogik.com/decoder/ }
+24. Comodo SSL Store { https://comodosslstore.com/ssltools/cert-decoder.php }
+25. Sectigo { https://sectigostore.com/ssl-tools/cert-decoder.php }
