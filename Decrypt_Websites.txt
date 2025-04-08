@@ -1,6 +1,6 @@
 // "Decrypting and Hashing" by { Daily Investors }
 
-1. Hashcat { Both in Linux, and windows. Perfect to automate with Python }
+1. Hashcat {(( hashcat.net ) Both in Linux, and windows. Perfect to automate with Python )}
 2. CrackStation { crackstation.net }
 3. MD5Online { md5online.org }
 4. Hashes.com { hashes.com }
