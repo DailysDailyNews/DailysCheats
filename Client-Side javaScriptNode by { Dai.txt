@@ -1,0 +1,712 @@
+Client-Side javaScript/Node by { Daily Investors }, 
+if anyone wishes ti help donate and support my Ethical Cause, We will greatly appreciate it! Thank You
+
+//Objects
+1. document
+2. location
+3. history
+4. navigator
+5. screen
+6. frames
+7. innerWidth
+8. outerWidth
+10. pageXOffset
+11. localStorage
+12. sessionStorage
+13. console
+14. performance
+15. requestAnimationFrame()
+16. cancelAnimationFrame()
+17. setTimeout()
+18. clearTimeout()
+19. alert()
+20. confirm()
+21. prompt()
+22. open()
+23. close()
+24. focus()
+25. blur()
+26. addEventListner()
+27. window
+28. window.document
+29. document
+30. HTMLElement
+31. Element Tags { e.g., <a>, <img>, <input>, <button>, etc}
+32. nodes
+33. element
+34. Text
+35. comment
+36. Attr
+37. CSSStyleDeclaration
+38. DOMTokenList
+39. HTMLCollection
+40. NodeList
+41. Event Objects { clicks, mouseover, KetboardEvent, MouseEvent, etc}
+
+//Properties
+1. documentElement
+2. head
+3. body
+4. title
+5. URL
+6. domain
+7. referrer
+8. readyState
+9. forms
+10. images
+11. links
+12. scripts
+13. styleSheets
+14. cookie
+
+
+//Methods for Selecting Elements
+1. getElementById(id);
+2. getElementsByClassName(className);
+3. getElementsByTagName(tagName)
+4. querySelector(selector)
+5. querySelectorAll(selector)
+6. HTMLAnchorElement for <a> with a href
+7. HTMLInputElement for <input> with value
+8. HTMLImageElement for <img> with src
+9. TMLButtonElement for <button> with disabled
+
+
+//Methods for Creating and Manipulating
+1. createElement(tagName)
+2. createTextNode(text)
+3. createDocumentFragment()
+4. appendChild(node)
+5. insertBefore(newNode, refferenceNode)
+6. removeChild(node)
+7. getAttribute(name)
+8. setAttribute(name, value)
+9. removeAttribute(name)
+10. addEventListner()
+
+// Visibility of Elements
+1. element.style.display = 'none';
+2. element.style.display = 'block';
+3. element.hidden = true;
+4. element.classList.toggle('hidden');
+
+//Interactive Buttons
+1. formElement.addEventListner('submit', (event) => {
+     event.preventDefault(); 
+   });
+
+
+//Simulate User Interactions
+1. element.click();
+2. element.focus();
+3. input Element.dispatchEvent(new Event('change'));
+
+
+//Custom CSS
+1. Can be injected for visual testing by creating a <style> element, and appending it to the <head> with Custom Rules. 
+2. The <style> element can always be modified
+
+
+//String Manipulation Functions
+1. str.trim();
+2. str.include('substring');
+3. str.indexOf('substring');
+4. str.replace('old', 'new');
+5. str.replaceAll('old', 'new');
+6. arr.filter(item => item > 5);
+7. arr.map(item => item * 2);
+8. arr.sort((a, b) => a - b);
+9. arr.find(item => item === 'value');
+10. arr.forEach(item => console.log(item));
+11. const cloneObj = {...originalObj };
+12. const deepCloneObj = JSON.parse(JSON.stringify(originalObj));
+   // now merging with
+    Object.assign({}, obj1, obj2);
+13. obj.jasOwnProperty('propertyName');
+14. On the end of a URL
+    /#" onload="this.src+=x onerror=print()>'"></iframe>
+
+
+
+//Functions for Handling Cookies
+1. document.cookie = 'name=value';
+2. localstorage.setItem('key', 'value');
+3. localStorage.getItem('key');
+
+
+
+// Global Documents
+1. document.designMode = 'on';
+2. console.log(document.activeElement);
+3.let element = document.querySelector('.my-class');
+4.let elements = docuemtn.querySelectorAll('.my-class');
+5. let newDiv = document.createElement('div;);
+6. let element = docuemtn.getElementById('my-id');
+7.let elements = document.getElementsByClassName('my-class');
+8. let elements = document.getElementsByTagName('div')
+
+
+
+//Debugging
+1. console.log('Debug message');
+2. console.error('Error message');
+3. console.table([{name: 'Alice', age: 25}, {name: 'Bob', age: 30}]);
+4. debugger;
+5. fetch('https://api.example.com/data',
+   {
+     method: 'GET',
+     headers: {
+      "Authorization': 'Bearer YOUR_TOKEN'
+   }
+   })
+   .then(response => response.json())
+   .then(data => console.log(data));
+6. localStoreage.setItem('token', 'YOOUR_TOKEN');
+   let token = loca;Storage.getItem('token');
+
+
+
+//Client-Side
+1. const e = document.createElement("div");
+2. const e = document.createElement("div");
+3. Array.from(document.links).map(link => link.href)
+4. document.querySelectorAll("input[type='hidden']")
+5. document.cookie.split(';').map(cookie => cookie.trim());
+6. function findImgInParent(node) {
+     var tg=node.target;
+     if(tg==undefined||tg.tagName=undefined)
+        tg=node;
+     var tag=tg.tagName
+     if(tag.toLowerCase()=='html')
+       return null;
+     var child=node.childNodes;
+     var fnd=null;
+     if(child==undefined)
+       child=node.target.childNodes;
+     child.forEach(function(key) {
+       if(key.tagName=='img')
+         fnd=key;
+    });
+
+
+
+7.Error.prototype.message
+Error.prototype.toString()
+
+
+
+8. Errors
+new Error()
+new Error(message)
+new Error(message, options)
+new Error(message, fileName)
+new Error(message, fileName, lineNumber)
+
+Error()
+Error(message)
+Error(message, options)
+Error(message, fileName)
+Error(message, fileName, lineNumber)
+
+
+
+9. Rethrowing Errors
+It is sometimes useful to catch an error and re-throw it with a new message. In this case you should pass the original error into the constructor for the new Error.
+
+try {
+  frameworkThatCanThrow();
+} catch (err) {
+  throw new Error("New error message", { cause: err });
+
+
+
+
+10. Omitting Options
+JavaScript only reads options.cause if options is an object.
+Example:
+const error1 = new Error("Error message");
+console.log("cause" in error1); // false
+
+
+11. Passing a primitive value
+const error2 = new Error("Error message", "");
+console.log("cause" in error2); // false
+
+
+12. Passing an object without a cause property
+const error3 = new Error("Error message", { details: "http error" });
+console.log("cause" in error3); // false
+
+
+
+13. Error.captureStackTrace()
+The Error.captureStackTrace() static method installs stack trace information on a provided object as the stack property.
+The getStack() utility function returns the current stack trace at the point it is called, removing itself from the stack. This serves the same debugging purpose as console.trace(), but allows you to output the string elsewhere. Note that it does not construct an Error instance for this purpose, but installs stack on a plain object, which would be more efficient for our purposes. Normally, you would call Error.captureStackTrace on objects intended to be thrown as errors, as shown in the next example.
+Example:
+function getStack() {
+  const obj = {};
+  if ("captureStackTrace" in Error) {
+    // Avoid getStack itself in the stack trace
+    Error.captureStackTrace(obj, getStack);
+  }
+  return obj.stack;
+}
+
+function foo() {
+  console.log(getStack());
+}
+
+foo();
+
+
+
+14. Installing stack trace on a custom error object
+The main use case for Error.captureStackTrace() is to install a stack trace on a custom error object. Typically, you define custom errors by extending the Error class, which automatically makes the stack property available via inheritance. The problem with the default stack trace is that it includes the constructor call itself, which leaks the implementation details. You can avoid this by using Error.captureStackTrace().
+Example:
+class MyError extends Error {
+  constructor(message, options) {
+    super(message, options);
+    if ("captureStackTrace" in Error) {
+      // Avoid MyError itself in the stack trace
+      Error.captureStackTrace(this, MyError);
+    }
+  }
+}
+
+const myError = new MyError("Something went wrong");
+console.log(myError.stack);
+
+
+14.B. If you don't call Error.captureStackTrace() here, 
+some engines are still smart enough to avoid MyError in the stack trace if the constructor inherits from Error. 
+Calling Error.captureStackTrace() is more important for custom errors that, for some reason, do not inherit from Error.
+Example:
+class MyError {
+  constructor(message) {
+    this.message = message;
+    if ("captureStackTrace" in Error) {
+      // Avoid MyError itself in the stack trace
+      Error.captureStackTrace(this, MyError);
+    }
+  }
+}
+
+const myError = new MyError("Something went wrong");
+console.log(myError.stack);
+
+
+
+15. Error.isError(value)
+Error.isError() checks if the passed value is an Error.  
+This is the same mechanism used by Array.isArray()
+It is a more robust alternative to instanceof Error because it avoids false positives and false negatives:
+Error.isError() rejects values that aren't actual Error instances, even if they have Error.prototype in their prototype chain — 
+instanceof Error would accept these as it does check the prototype chain.
+Error.isError() accepts Error objects constructed in another realm — instanceof Error returns false for these because the identity of the Error constructor is different across realms.
+Error.isError() returns true for DOMException instances. 
+Example:
+// all following calls return true
+Error.isError(new Error());
+Error.isError(new TypeError());
+Error.isError(new DOMException());
+try {
+  1 + 1n;
+} catch (e) {
+  console.log(Error.isError(e)); // The operation threw a TypeError, so this returns true
+}
+
+
+
+16. All of the following calls return false.
+Error.isError();
+Error.isError({});
+Error.isError(null);
+Error.isError(undefined);
+Error.isError(17);
+Error.isError("Error");
+Error.isError(true);
+Error.isError(false);
+// This is not an error, because the object does not have the private property
+// initialized by the Error constructor
+Error.isError({ __proto__: Error.prototype });
+
+
+
+17. instanceof vs. Error.isError()
+When checking for Error instance, Error.isError() is preferred over instanceof because it works across realms.
+Example:
+const iframe = document.createElement("iframe");
+document.body.appendChild(iframe);
+const xError = window.frames[window.frames.length - 1].Error;
+const error = new xError();
+
+
+
+18. Correctly checking for Error
+Error.isError(error); // true
+// The prototype of error is xError.prototype, which is a
+// different object from Error.prototype
+error instanceof Error; // false
+
+
+
+19. Normalizing caught errors
+You can use Error.isError() to detect if the caught value is an error and normalize it to an error object.
+Example:
+try {
+  throw "Oops; this is not an Error object";
+} catch (e) {
+  if (!Error.isError(e)) {
+    e = new Error(e);
+  }
+  console.error(e.message);
+}
+
+
+
+
+20. Error.stackTraceLimit static data property indicates the maximum number of stack frames captured by the stack trace of an error. 
+It can be set by user code to change the engine's behavior.
+Setting it to a larger value can be useful for debugging, as it allows you to see more of the call stack. 
+Setting it to a smaller value can improve performance as it reduces the amount of stack captured.
+
+Property attributes of Error.stackTraceLimit
+Writable	yes
+Enumerable	yes
+Configurable	yes
+
+Example:
+Error.stackTraceLimit = 2;
+const a = () => b();
+const b = () => c();
+const c = () => d();
+const d = () => e();
+const e = () => {
+  throw new Error("My error");
+};
+try {
+  a();
+} catch (e) {
+  console.log(e.stack);
+}
+
+
+
+
+21. Error.prototype.toString()
+Syntax: toString()
+The Error object overrides the Object.prototype.toString() method inherited by all objects. 
+Example:
+Error.prototype.toString = function () {
+  if (
+    this === null ||
+    (typeof this 
+
+  !== "object" && typeof this !== "function")
+  ) {
+    throw new TypeError();
+  }
+  let name = this.name;
+  name = name === undefined ? "Error" : `${name}`;
+  let msg = this.message;
+  msg = msg === undefined ? "" : `${msg}`;
+  if (name === "") {
+    return msg;
+  }
+  if (msg === "") {
+    return name;
+  }
+  return `${name}: ${msg}`;
+};
+
+
+22. Location Search
+location.search
+
+
+
+23. Writing to the Dom
+var stores = ["London", "Paris","Milon"]; var store = (new URLSearchParams(window.location.search)).get("storeId");
+document.write('<select name="storeOd">'); if(store) { document.write('<option selected>'+store+'</option>; }
+document.write('<option>'+stores[i]+'</options>'; } docuemtn.write('</select>'):
+
+
+24. Sources
+location.search
+document.referrer
+document.cookie
+
+
+
+25. access a element
+goto = location.hash.slice(1)
+if (goto.startsWith('https:')) {
+  location = goto;
+}
+
+
+
+26. Example Sinks
+document.write()
+window.location
+document.cookie
+eval()
+document.domain
+WebSocket()
+element.src
+postMessage()
+setRequestHeader()
+FileReader.readAsText()
+ExecuteSql()
+sessionStorage.setItem()
+document.evaluate()
+JSON.parse()
+element.setAttribute()
+RegExp()
+
+
+
+27. Client-Side
+$server = "server.example.com";
+$username = AskForUserName();
+$password = AskForPassword();
+$address = AskForAddress();
+$sock = OpenSocket($server, 1234);
+writeSocket($sock, "AUTH $username $password\n");
+$resp = readSocket($sock);
+if ($resp eq "success") {
+
+# username/pass is valid, go ahead and update the info!
+writeSocket($sock, "CHANGE-ADDRESS $username $address\n";
+}
+else {
+print "ERROR: Invalid Authentication!\n";
+}
+
+
+
+28. Accessing Global Properties
+console.log(window.innrWidth);
+console.log(window.ocation.href);
+
+
+
+29. Global Methods
+window.alert("Hello!");
+let timeID = windows.setTimeout(function() {
+  console.log("Timeout finished");
+}, 1000);
+window.clearTimeout(timerId);
+
+
+
+30. Event Listener in the Window
+window.addEventListner('resize', function() {
+  console.log("Window resized");
+});
+
+
+
+31. Extraction for Debugging
+console.log(window);
+
+
+
+32. Accessing document properties
+console.log(document.title);
+
+console.log(document.body);
+
+
+
+33. Selecting Elements
+let heading = document.getElementById('main-heading');
+let paragraphs = document.querySelectorAll('p');
+
+
+
+34. Creating Elements
+let newDiv = document.createElement('div');
+let newTextNode = document.createTextNode('New Content');
+newDiv.appendChile(newTextNode);
+document.body.appendChild(newDiv);
+
+
+
+35. Event Listener on Documents
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM is fully loaded");
+});
+
+
+
+36. Extraction
+console.log(document);
+
+
+
+37. Console { Parent Class: Object}
+console.log("Log message");
+
+console.warn("Warning message");
+
+console.error("Error message");
+
+console.table([{ name: 'Daily', age: 333 }, { name: 'Bob', age:25 }]);
+
+console.dir(document.body);
+
+console.trace();
+
+
+
+
+38. Location
+console.log(location.href);
+
+console.log(ocation.hostname);
+
+console.log(location.pathname);
+
+console.log(location.search);
+
+console.log(location.hash);
+
+
+39. Modifying the Location
+location.assign('https://soloist.ai/dailyinvestors');
+
+location.reload();
+
+ //Extraction
+console.log(location);
+
+
+
+40. History
+history.back();
+
+history.forward();
+
+history.go(-2);
+
+
+
+41. Modifying History
+history.pushState({ page: 'home' }, 'Home', '/home');
+
+history.replaceState({ page: 'profile' }, 'Profile', '/profile');
+
+
+
+
+42. Event Listener for History Changes
+window.addeventListener('popstate', function(event) {
+  console.log("Popped state:", event.state);
+});
+
+  //Extraction
+  console.log(history)
+ 
+
+
+43. Navigator { Parent Class: Object }
+console.log(navigator.userAgent);
+
+console.log(navigator.platform);
+
+//Feature Detection
+if (navigator.geolocation) {
+  console.log("Geolocation is supported");
+});
+
+//Extraction
+console.log(navigator)
+
+
+
+44. Screen { Parent Class: Object}
+console.log(screen.width);
+
+console.log(screen.height);
+
+console.log(screen.acailWidth);
+
+console.log(screen.pixelDepth);
+
+//Extraction
+console.log(screen)
+
+
+
+45. Dom Nodes {Inheritance Hierarchy} 
+  1. Node(Base Class)
+     Properties: { nodeName, nodeType, nodeValue, parentNode, chileNodes, firstChild, lastChild, nextSibling, previousSibling}
+     Methods: { appendChild(), insertBefore(), removeChild(), replaceChild(), cloneNode() }
+
+  2. Elements(Inherits from Node)
+     Properties: { tagName, className, classList, innerHTML, textContent, style, attributes }
+     Methods: getAttribute(), setAttribute(), removeAttribute(0, querySelector(), querySelectorAll() }
+
+  3. HTMLElement(Inherits from Element)
+     Properties: { HTMLDivElement, HTMLPargraphElement, HTMLAnchorElement, HTMLInputElement, inherit from HTMLElement }
+
+  4. Text(Inherits from CharacterData, which inherits from Node)
+     Properties: { data }
+     Methods: { appendData(), deleteData(), insertData(), replaceData(), splitText() }
+
+  5. Comment(Inherits from CharacterData)
+     Properties: { data }
+
+  6. Document(Inherits from Node, EventTarget }
+
+  7. Document Fragment(Inherits from Node)
+     Is not apart of the DOM Tree
+
+
+
+46. Examples for Nodes with Inheritances
+  1. Creating a element
+     let newParagraph = document.createElement('p');
+     newParagraph.textContent = 'New Paragraph.';
+
+  2. Accessing the Parent Node
+     console.log(newParagraph.parentNode);
+
+  3. Appending to the document "Body"
+     document.body.appendChild(newParagraph.parentNode);
+
+  4. Creating more elements
+     let strongElement = document.createElement('strong');
+     strongElement.appendChild(emphasisText);
+     newPargraoh.appendChild(strongElement);
+
+  5. Examining Child Nodes
+     console.log(newParagraph.nodeName);
+     console.log(newPargraph.nodeType);
+
+  6. Building with DocumentFragment
+     let fragment = document.creatwDocumentFragmeny();
+     for (let i = 0; i < 3; i++) {
+       let listItem = document.creatwElemeny('li');
+       listItem.textContent = item ${i + 1};`
+       fragment.appendChild(listItem);
+     }
+     let newList = document.createElement('ul');
+     newList.appendChild(fragment);
+     document.body.appendChild(newList);
+
+     // Use console.dir() to view the properties/methods
+     console.dir(newParagraph);
+     
+
+
+
+
+
+
+
+
+
+
+
