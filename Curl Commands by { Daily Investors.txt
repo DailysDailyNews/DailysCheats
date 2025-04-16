@@ -29,7 +29,7 @@ Curl Commands by { Daily Investors }
 27. curl -c cookies.txt --max-redirs 0 <url_that_redirects> "Extracting Cookies without Redirects"
 28. curl -v --max-redirs 0 <url_that_redirects> "Extract Tokens without Redirects"
 29. curl -I --max-redirs 0 <url_that_redirects> "Extract Headers without Redirects"
-30. curl --certinfo --max-redirs 0 <url_that_redirects> "Extract Certs without Redirect"
+31. curl -L -I -s -A "${user_agent}" "${url}" | grep -oP "Location: \K.*" "Helps with Redirects in Scripts"
 
 
 //Curl and APIS
