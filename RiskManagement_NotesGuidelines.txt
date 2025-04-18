@@ -1,0 +1,306 @@
+Risk Management Notes/Guidelines by { Daily Investors }
+
+//Risk Management
+1. Risk Assessment
+2. Treatment
+3. Security Controls
+4. Customize
+5. Configure
+6. Regulations & Laws
+7. Security Policy Frameworks 
+8. Future Planning
+9. Controls
+10. Custom Policies
+
+//Incident Response
+1. Build Response Program
+2. Create Team
+3. Train
+4. 24/7 Availability
+5. Fault Tolerance
+
+//Disaster Recovery
+1. Planning
+2. Backup
+3. Disaster Sites
+4. Testing
+
+//Five Types of Disaster Planing
+1. Read-Through { Speak with Team, seek Feedback}
+2. Walk-Through { Gather Team for feedback }
+3. Simulation { Practice }
+4. Parallel Test { Test in controlled Environment }
+5. Full Interruption Test
+5. Create Recovery Goals
+6. Validate all plans
+7. Identify plans/patterns
+
+
+//Physical Security
+1. Cameras
+2. IOT
+3. Gates
+4. Keys
+5. Badges
+6. Employees
+7. Alarms
+8. circuits
+9. Bollards
+10. Customize
+
+//Account Management
+1. Job Rotation
+2. Schemes
+3. Mandatory Vacation Policies
+4. Account Lifecycles
+5. Formal Attestation Process { Review Documentation, Review Access Permissions, and Policies.
+
+//Access Policy Violations
+1. Travel Time Logins
+2. Unusual Network Locations
+3. Time-of-Day Logins
+4. Deviations in data transfers
+5. Enable Geo-Tagging
+6. Provisions { After Onboarding }
+7. Disable & Revoke
+8. Set expiration Dates
+9. Monitor TCP connections
+10. Monitor Handshakes
+11. Monitor Flags
+12. Monitor UDP Transfers
+13. Static IPs
+14. DHCP { Pool of IPs }
+15. Monitor Ports/Sockets
+16. Monitor/Set WPA
+17. Check All Connections with Ping
+18. Trace-Routes
+19. Enable Anti-Malware
+20. Secure against Snooping, Botnet Commands, Malware Injections, Man-In-Middle, Man-In-Browser, Relay Attacks, SSL Stripping, Fault Injections, Side-Channel Attacks,
+    Timing Attacks.
+21. Set up IDS
+22. Set up Signature Detections
+23. Set up Anomaly Detections
+24. Set up IPS Detections { out of band, paths, etc }
+25. Set up Endpoint Detections
+26. Anti-Port Scanners
+27. Anti-Vulnerability Scanners
+28. Anti-Web Application Scanners
+29. Ensure Zero-Trust
+
+
+//Tools for Reverse Engineering
+1. IDA Pro
+2. Ghidra
+3. OilyDbg
+4. Winhex
+5. CyberChef
+
+
+//Security Layers
+1. Network Border Firewall
+2. Internet Firewall
+3. Internal Network
+4. Demilitarized Zone
+5. DMZ { email, web servers }
+6. Endpoints
+
+
+//Special Networks
+1. Extranet/Intranet
+2. Honeynet
+3. Ad Hoc Net
+
+
+//Switch Networks
+1. Application
+2. Presentation
+3. Session
+4. Transport
+5. Network
+6. Data link
+7. Physical
+8. Mac Addresses
+9. VLAN
+
+
+//FireWall Rules
+1. Source System Address
+2. Destination System Address
+3. Port + Protocols
+4. Allow or Deny
+5. Set Rules
+6. Implicit Only
+7. NAT Gateway
+8. Content Filters
+9. Web Application
+10. VPN
+11. Remote Access VPNS
+12. VPN Endpoints
+13. IPSEC VPN
+14. SSL/TLS VPN
+15. HTML5 VPN
+
+
+//NGFW
+1. New Generation Firewall
+
+//NAC Roles
+1. User + Device Authentication
+2. Role-Based
+3. Posture Checking
+4. Server Authentication 
+5. Out-of-Band
+6. Agentless
+7. Wrappers
+
+
+//Cloud Servers
+1. SaaS
+2. IaaS
+3. PaaS
+4. SoaS
+
+//Multifactor
+1. Tokens
+2. Certs
+3. Cookies
+4. Admin Role-Based
+5. Anti-Virus
+6. Anti-Rootkits
+7. SSO
+8. Non-Repudiation
+
+
+
+// Tips for Risk
+1. Fraud
+2. Risks { Internal/External }
+3. Multipart Risks
+4. Legacy Risks
+5. Vulnerabilities
+6. Web Assessment
+
+//Risk Treatment
+1. Analyze
+2. Implement
+3. Flood Risk
+4. Risk Mitigations
+5. Risk Acceptance
+6. Risk { Inherent Risk, Controls, Control & residual risk }
+
+
+//Selecting Controls
+1. Detection
+2. Prevent
+3. Technical
+4. Signatures
+5. Detective
+6. Administrative
+7. Behaviors
+8. Corrective
+9. Physical
+10. Firewalls
+11. Defense-In-Depth
+12. Configuration Management
+13. Versioning
+14. Diagrams
+15. SEIM
+16. Vendors
+17. Repairs
+18. Contracts
+
+//Payloads/Malware
+1. Adware
+2. Spyware
+3. Ransomware
+4. CyrptoWare
+
+
+//Sha Generator
+1. liavaag.org
+
+
+//Sanitizing Techniques
+1. Clearing Overwrites
+2. Purging
+3. Destroying
+
+//Classifications
+1. Top Secret
+2. Secret
+3. Confidential
+4. unclassified
+
+//Business Class
+1. Highly Semsitive
+2. Sensitive
+3. Internal
+4. Public
+
+
+//Monitor Data Auctions
+1. Monitor
+2. Access
+3. Delegate
+4. Controls
+
+
+//Botnets
+1. Infect Systems
+2. Convert To Bots
+3. Infect Others
+4. Check In
+5. Get Commands
+6. Deliver Payload
+7. Command through network relays
+8. Indirect or Direct
+9. Use IRX, Twitter/X for Indirectly
+
+
+//Cloud Testing
+1. Amazon
+2. Google
+3. Azure
+
+
+//Tools
+1. Dynatrace
+2. Splunk
+3. Wiresharl
+4. SEIM
+5. Condo
+6. Falcon
+7. Ansible Tower
+8. Dr.Web
+9. Hyden BootCD
+10. Kaspersky
+
+
+//Remote Access Trojans
+1. Angler
+2. Nuclear
+3. Neutrino
+4. Rig
+5. Magnitude
+//Preventions
+1.Suricata
+2. Bro
+3. Snort
+4. CSP-Tools
+
+
+//Authors Notes
+1. This is our cheat sheet for our Risk Management Services
+2. Step by Step List of our Risk Management Services.
+3. If you wish to use this, all donations are welcome and Greatly Appreciated.
+
+
+
+
+
+
+
+
+
+
+
