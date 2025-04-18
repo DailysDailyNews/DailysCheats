@@ -11,6 +11,10 @@ Risk Management Notes/Guidelines by { Daily Investors }
 8. Future Planning
 9. Controls
 10. Custom Policies
+11. Assest Inventory
+12. Protocols and Ports
+13. Load Balancer
+14. Proxies/Reverse-Proxy
 
 //Incident Response
 1. Build Response Program
@@ -208,6 +212,7 @@ Risk Management Notes/Guidelines by { Daily Investors }
 16. Vendors
 17. Repairs
 18. Contracts
+19. Decoys/Moch
 
 //Payloads/Malware
 1. Adware
@@ -287,6 +292,56 @@ Risk Management Notes/Guidelines by { Daily Investors }
 2. Bro
 3. Snort
 4. CSP-Tools
+
+//Data Security
+1. Encryption
+2. Password
+3. Proxies
+4. Decrypt
+5. Data at Risk { File Encryption, Disk, Device }
+6. Transit { Http/S, Email, Mobile, Apps, VPN }
+7. Hash Functions
+
+//Algorithms
+1. Symmetric
+2. Asymmetric
+
+//Common Hash Functions
+1. Sha-1
+2. Sha-2
+3. AES
+4. Sha-3
+5. MD5
+6. RipeMD
+7. HMAC
+
+//Differencing Attacks
+1. Internal vs External
+2. Level of Sophiscation
+3. Access to resources
+4. Motivation
+5. Intent
+6. Whois
+7. Water-Hole Attacks
+
+//Zero-Day Exploit
+1. A product tar has been discovered but not patched "Microsoft lol"
+
+//Email Harvesting
+1. Gather Emails
+
+//Automating
+1. Address Reconnaissance
+2. Logs
+3. Triggers
+4. Tools
+
+//Threat Hunting
+1. Develop a Hypothesis
+2. Indicators { binary files, processes, network traffic, unexplained logs, unapproved config, sim cards, physcial hardware. }
+3. Process { traceroute, how did they manuvure, containment, eradication, recovery } 
+4. Password Attacks { Hydra, John, Hashcat, Custom, GitHub Lists }
+5. Credential Stuffing
 
 
 //Authors Notes
