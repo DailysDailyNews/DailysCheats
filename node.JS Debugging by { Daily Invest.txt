@@ -1,0 +1,48 @@
+node.JS Debugging by { Daily Investors }
+
+1. What to do if a site is slow?
+   1.Check Response times
+   2. Web-Interface
+   3. Document Everything
+
+2. Resolving Problems
+  1. Document Issue
+  2. Determine Scope
+  3. Settle or Find
+ 
+3. PM2: pm2.keymetrics.io
+  1. Node.js Process Manager
+  2. Production Runtime
+  3. Open-Source
+  4. Can be used to manage, monitor, & log
+  5. Install with NPM
+
+4. Other Node Managers
+  1. StrongLoop: strong-pm.io
+  2. forever: GitHub.com/foreverjs/forever
+
+5. PM2: npm install pm2 -g
+        docker-compose up -d
+  1. To start: pm2 start ./pm2.config.js
+  2. To select a app with pm2: pm2 show web
+  3. List: To view all status { stop, start, start "app" --watch, kill, -h }
+
+6. Node.js Console
+  1. node.js.org/api/console.html
+  2. console.log
+  3. console.error
+
+7. To fix NPM Permissions
+docs.npmjs.com/getting-started/fixing-npm-permissions
+
+8. Video Studio Extensions
+  1. Eslint
+  2. EditorConfig
+  3. Node.js Modules Intellisense
+  4. npm
+
+9. Technologies
+  1. Node,js -Language
+  2. Express - web framework
+  3. Pug - front end web template
+  4. Bootstrap
