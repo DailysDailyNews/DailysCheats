@@ -1,4 +1,5 @@
-!/usr/bin/env python
+#!/usr/bin/env python
+# This is not my Code. However currently my files are disappearing from Microsoft. So p[lacing on here for Quick Reference
 # Impacket - Collection of Python classes for working with network protocols.
 #
 # Copyright Fortra, LLC and its affiliated companies 
