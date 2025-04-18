@@ -53,7 +53,7 @@ Risk Management Notes/Guidelines by { Daily Investors }
 2. Schemes
 3. Mandatory Vacation Policies
 4. Account Lifecycles
-5. Formal Attestation Process { Review Documentation, Review Access Permissions, and Policies.
+5. Formal Attestation Process { Review Documentation, Review Access Permissions, and Policies. }
 
 //Access Policy Violations
 1. Travel Time Logins
@@ -232,7 +232,7 @@ Risk Management Notes/Guidelines by { Daily Investors }
 4. unclassified
 
 //Business Class
-1. Highly Semsitive
+1. Highly Sensitive
 2. Sensitive
 3. Internal
 4. Public
