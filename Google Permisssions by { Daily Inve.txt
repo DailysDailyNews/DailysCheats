@@ -918,284 +918,284 @@ apihub.deployments.delete
 apihub.deployments.deleteTagBinding		
 apihub.deployments.get	Supported	
 apihub.deployments.list	Supported	
-apihub.deployments.listEffectiveTags	Supported	
-apihub.deployments.listTagBindings	Supported	
-apihub.deployments.update	Supported	
-apihub.externalApis.create	Supported	
+apihub.deployments.listEffectiveTags		
+apihub.deployments.listTagBindings		
+apihub.deployments.update		
+apihub.externalApis.create		
 apihub.externalApis.delete
-apihub.externalApis.get	Supported	
-apihub.externalApis.list	Supported	
-apihub.externalApis.update	Supported	
-apihub.hostProjectRegistrations.create	Supported	
-apihub.hostProjectRegistrations.delete	Supported	
-apihub.hostProjectRegistrations.get	Supported	
-apihub.hostProjectRegistrations.list	Supported	
-apihub.hostProjectRegistrations.register	Supported	
-apihub.llmEnablements.deregister	Supported	
+apihub.externalApis.get		
+apihub.externalApis.list		
+apihub.externalApis.update		
+apihub.hostProjectRegistrations.create		
+apihub.hostProjectRegistrations.delete		
+apihub.hostProjectRegistrations.get		
+apihub.hostProjectRegistrations.list		
+apihub.hostProjectRegistrations.register		
+apihub.llmEnablements.deregister		
 apihub.llmEnablements.get
-apihub.llmEnablements.list	Supported	
-apihub.llmEnablements.register	Supported	
-apihub.locations.collectApiData	Supported	
-apihub.locations.searchResources	Supported	
-apihub.locations2.searchResources	Supported	
-apihub.operations.cancel	Supported	
-apihub.operations.delete	Supported	
-apihub.operations.get	Supported	
-apihub.operations.list	Supported	
-apihub.plugininstances.applyConfig	Supported
-apihub.plugininstances.create	Supported	
-apihub.plugininstances.delete	Supported	
-apihub.plugininstances.disable	Supported	
-apihub.plugininstances.enable	Supported	
-apihub.plugininstances.execute	Supported	
-apihub.plugininstances.get	Supported	
-apihub.plugininstances.list	Supported	
-apihub.plugininstances.update	Supported	
-apihub.plugins.create	Supported	
+apihub.llmEnablements.list		
+apihub.llmEnablements.register		
+apihub.locations.collectApiData		
+apihub.locations.searchResources		
+apihub.locations2.searchResources		
+apihub.operations.cancel		
+apihub.operations.delete		
+apihub.operations.get		
+apihub.operations.list		
+apihub.plugininstances.applyConfig	
+apihub.plugininstances.create		
+apihub.plugininstances.delete		
+apihub.plugininstances.disable		
+apihub.plugininstances.enable		
+apihub.plugininstances.execute		
+apihub.plugininstances.get		
+apihub.plugininstances.list		
+apihub.plugininstances.update		
+apihub.plugins.create		
 apihub.plugins.delete
-apihub.plugins.disable	Supported	
-apihub.plugins.enable	Supported	
-apihub.plugins.get	Supported	
-apihub.plugins.list	Supported	
-apihub.runTimeProjectAttachments.attach	Supported	
-apihub.runTimeProjectAttachments.create	Supported	
-apihub.runTimeProjectAttachments.delete	Supported	
-apihub.runTimeProjectAttachments.get	Supported	
-apihub.runTimeProjectAttachments.list	Supported	
+apihub.plugins.disable		
+apihub.plugins.enable		
+apihub.plugins.get		
+apihub.plugins.list		
+apihub.runTimeProjectAttachments.attach		
+apihub.runTimeProjectAttachments.create		
+apihub.runTimeProjectAttachments.delete		
+apihub.runTimeProjectAttachments.get		
+apihub.runTimeProjectAttachments.list		
 apihub.runTimeProjectAttachments.lookup
-apihub.specs.create	Supported	
-apihub.specs.delete	Supported	
-apihub.specs.get	Supported	
-apihub.specs.lint	Supported	
-apihub.specs.list	Supported	
-apihub.specs.update	Supported	
-apihub.styleGuides.get	Supported	
-apihub.styleGuides.update	Supported	
-apihub.versions.create	Supported	
+apihub.specs.create		
+apihub.specs.delete		
+apihub.specs.get		
+apihub.specs.lint		
+apihub.specs.list		
+apihub.specs.update		
+apihub.styleGuides.get		
+apihub.styleGuides.update		
+apihub.versions.create		
 apihub.versions.delete
-apihub.versions.get	Supported	
-apihub.versions.list	Supported	
-apihub.versions.update	Supported	
-apikeys.keys.create	Supported	
-apikeys.keys.delete	Supported	
-apikeys.keys.get	Supported	
-apikeys.keys.getKeyString	Supported	
-apikeys.keys.list	Supported	
-apikeys.keys.lookup	Supported	
+apihub.versions.get		
+apihub.versions.list		
+apihub.versions.update		
+apikeys.keys.create		
+apikeys.keys.delete		
+apikeys.keys.get		
+apikeys.keys.getKeyString		
+apikeys.keys.list		
+apikeys.keys.lookup		
 apikeys.keys.undelete
-apikeys.keys.update	Supported	
-apim.apiObservations.batchEditTags	Supported	
-apim.apiObservations.get	Supported	
-apim.apiObservations.list	Supported	
-apim.apiOperations.get	Supported	
-apim.apiOperations.list	Supported	
-apim.locations.get	Supported	
-apim.locations.list	Supported	
-apim.locations.listApiObservationTags	Supported	
+apikeys.keys.update		
+apim.apiObservations.batchEditTags		
+apim.apiObservations.get		
+apim.apiObservations.list		
+apim.apiOperations.get		
+apim.apiOperations.list		
+apim.locations.get		
+apim.locations.list		
+apim.locations.listApiObservationTags		
 apim.observationJobs.create
-apim.observationJobs.delete	Supported	
-apim.observationJobs.disable	Supported	
-apim.observationJobs.enable	Supported	
-apim.observationJobs.get	Supported	
-apim.observationJobs.list	Supported	
-apim.observationSources.create	Supported	
-apim.observationSources.delete	Supported	
-apim.observationSources.get	Supported	
-apim.observationSources.list	Supported	
+apim.observationJobs.delete		
+apim.observationJobs.disable		
+apim.observationJobs.enable		
+apim.observationJobs.get		
+apim.observationJobs.list		
+apim.observationSources.create		
+apim.observationSources.delete		
+apim.observationSources.get		
+apim.observationSources.list		
 apim.operations.cancel
-apim.operations.delete	Supported	
-apim.operations.get	Supported	
-apim.operations.list	Supported	
-appengine.applications.create	Supported	
-appengine.applications.get	Supported	
-appengine.applications.listRuntimes	Supported	
-appengine.applications.update	Supported	
-appengine.instances.delete	Supported	
-appengine.instances.enableDebug	Supported	
+apim.operations.delete		
+apim.operations.get		
+apim.operations.list		
+appengine.applications.create		
+appengine.applications.get		
+appengine.applications.listRuntimes		
+appengine.applications.update		
+appengine.instances.delete		
+appengine.instances.enableDebug		
 appengine.instances.get
-appengine.instances.list	Supported	
+appengine.instances.list		
 appengine.memcache.addKey	Testing 	
 appengine.memcache.flush	Testing 	
 appengine.memcache.get	Testing 	
 appengine.memcache.getKey	Testing 	
 appengine.memcache.list	Testing 	
 appengine.memcache.update	Testing 	
-appengine.operations.get	Supported	
-appengine.operations.list	Supported	
+appengine.operations.get		
+appengine.operations.list		
 appengine.runtimes.actAsAdmin
-appengine.services.delete	Supported	
-appengine.services.get	Supported	
-appengine.services.list	Supported	
-appengine.services.update	Supported	
-appengine.versions.create	Supported	
-appengine.versions.delete	Supported	
-appengine.versions.get	Supported	
-appengine.versions.getFileContents	Supported	
-appengine.versions.list	Supported	
+appengine.services.delete		
+appengine.services.get		
+appengine.services.list		
+appengine.services.update		
+appengine.versions.create		
+appengine.versions.delete		
+appengine.versions.get		
+appengine.versions.getFileContents		
+appengine.versions.list		
 appengine.versions.update
-apphub.applications.create	Supported	
-apphub.applications.delete	Supported	
+apphub.applications.create		
+apphub.applications.delete		
 apphub.applications.get	Supported	
-apphub.applications.getIamPolicy	Supported	
-apphub.applications.list	Supported	
-apphub.applications.setIamPolicy	Supported	
-apphub.applications.update	Supported	
-apphub.discoveredServices.get	Supported	
-apphub.discoveredServices.list	Supported	
+apphub.applications.getIamPolicy		
+apphub.applications.list		
+apphub.applications.setIamPolicy		
+apphub.applications.update		
+apphub.discoveredServices.get		
+apphub.discoveredServices.list		
 apphub.discoveredServices.register
-apphub.discoveredWorkloads.get	Supported	
-apphub.discoveredWorkloads.list	Supported	
-apphub.discoveredWorkloads.register	Supported	
-apphub.locations.get	Supported	
-apphub.locations.list	Supported	
-apphub.operations.cancel	Supported	
-apphub.operations.delete	Supported	
-apphub.operations.get	Supported	
-apphub.operations.list	Supported	
+apphub.discoveredWorkloads.get		
+apphub.discoveredWorkloads.list		
+apphub.discoveredWorkloads.register		
+apphub.locations.get		
+apphub.locations.list		
+apphub.operations.cancel		
+apphub.operations.delete		
+apphub.operations.get		
+apphub.operations.list		
 apphub.serviceProjectAttachments.attach
-apphub.serviceProjectAttachments.create	Supported	
-apphub.serviceProjectAttachments.delete	Supported	
-apphub.serviceProjectAttachments.detach	Supported	
-apphub.serviceProjectAttachments.get	Supported	
-apphub.serviceProjectAttachments.list	Supported	
-apphub.serviceProjectAttachments.lookup	Supported	
-apphub.services.create	Supported	
-apphub.services.delete	Supported	
-apphub.services.get	Supported	
+apphub.serviceProjectAttachments.create		
+apphub.serviceProjectAttachments.delete		
+apphub.serviceProjectAttachments.detach		
+apphub.serviceProjectAttachments.get		
+apphub.serviceProjectAttachments.list		
+apphub.serviceProjectAttachments.lookup		
+apphub.services.create		
+apphub.services.delete		
+apphub.services.get		
 apphub.services.list
-apphub.services.update	Supported	
-apphub.workloads.create	Supported	
-apphub.workloads.delete	Supported	
-apphub.workloads.get	Supported	
-apphub.workloads.list	Supported	
-apphub.workloads.update	Supported	
-applianceactivation.rttCommands.approve	Supported	
-applianceactivation.rttCommands.create	Supported	
-applianceactivation.rttCommands.get	Supported	
+apphub.services.update		
+apphub.workloads.create		
+apphub.workloads.delete		
+apphub.workloads.get		
+apphub.workloads.list		
+apphub.workloads.update		
+applianceactivation.rttCommands.approve		
+applianceactivation.rttCommands.create		
+applianceactivation.rttCommands.get		
 applianceactivation.rttCommands.list
-applianceactivation.rttCommands.sendResult	Supported	
-artifactregistry.aptartifacts.create	Supported	
-artifactregistry.attachments.create	Supported	
-artifactregistry.attachments.delete	Supported	
-artifactregistry.attachments.get	Supported	
-artifactregistry.attachments.list	Supported	
-artifactregistry.dockerimages.get	Supported	
-artifactregistry.dockerimages.list	Supported	
-artifactregistry.files.delete	Supported	
+applianceactivation.rttCommands.sendResult		
+artifactregistry.aptartifacts.create		
+artifactregistry.attachments.create		
+artifactregistry.attachments.delete		
+artifactregistry.attachments.get		
+artifactregistry.attachments.list		
+artifactregistry.dockerimages.get		
+artifactregistry.dockerimages.list		
+artifactregistry.files.delete		
 artifactregistry.files.download
-artifactregistry.files.get	Supported	
-artifactregistry.files.list	Supported	
-artifactregistry.files.update	Supported	
-artifactregistry.files.upload	Supported	
-artifactregistry.kfpartifacts.create	Supported	
-artifactregistry.locations.get	Supported	
-artifactregistry.locations.list	Supported	
-artifactregistry.mavenartifacts.get	Supported	
-artifactregistry.mavenartifacts.list	Supported	
+artifactregistry.files.get		
+artifactregistry.files.list		
+artifactregistry.files.update		
+artifactregistry.files.upload		
+artifactregistry.kfpartifacts.create		
+artifactregistry.locations.get		
+artifactregistry.locations.list		
+artifactregistry.mavenartifacts.get		
+artifactregistry.mavenartifacts.list		
 artifactregistry.npmpackages.get
-artifactregistry.npmpackages.list	Supported	
-artifactregistry.packages.delete	Supported	
-artifactregistry.packages.get	Supported	
-artifactregistry.packages.list	Supported	
-artifactregistry.packages.update	Supported	
-artifactregistry.projectsettings.get	Supported	
-artifactregistry.projectsettings.update	Supported	
-artifactregistry.pythonpackages.get	Supported	
-artifactregistry.pythonpackages.list	Supported	
+artifactregistry.npmpackages.list		
+artifactregistry.packages.delete		
+artifactregistry.packages.get		
+artifactregistry.packages.list		
+artifactregistry.packages.update		
+artifactregistry.projectsettings.get		
+artifactregistry.projectsettings.update		
+artifactregistry.pythonpackages.get		
+artifactregistry.pythonpackages.list		
 artifactregistry.repositories.create
-artifactregistry.repositories.createOnPush	Supported	
-artifactregistry.repositories.createTagBinding	Supported	
-artifactregistry.repositories.delete	Supported	
-artifactregistry.repositories.deleteArtifacts	Supported	
-artifactregistry.repositories.deleteTagBinding	Supported	
-artifactregistry.repositories.downloadArtifacts	Supported	
-artifactregistry.repositories.get	Supported	
-artifactregistry.repositories.getIamPolicy	Supported	
-artifactregistry.repositories.list	Supported	
+artifactregistry.repositories.createOnPush		
+artifactregistry.repositories.createTagBinding		
+artifactregistry.repositories.delete		
+artifactregistry.repositories.deleteArtifacts		
+artifactregistry.repositories.deleteTagBinding		
+artifactregistry.repositories.downloadArtifacts		
+artifactregistry.repositories.get		
+artifactregistry.repositories.getIamPolicy		
+artifactregistry.repositories.list		
 artifactregistry.repositories.listEffectiveTags
-artifactregistry.repositories.listTagBindings	Supported	
-artifactregistry.repositories.readViaVirtualRepository	Supported	
-artifactregistry.repositories.setIamPolicy	Supported	
-artifactregistry.repositories.update	Supported	
-artifactregistry.repositories.uploadArtifacts	Supported	
-artifactregistry.rules.create	Supported	
-artifactregistry.rules.delete	Supported	
-artifactregistry.rules.get	Supported	
-artifactregistry.rules.list	Supported	
+artifactregistry.repositories.listTagBindings		
+artifactregistry.repositories.readViaVirtualRepository		
+artifactregistry.repositories.setIamPolicy		
+artifactregistry.repositories.update		
+artifactregistry.repositories.uploadArtifacts		
+artifactregistry.rules.create		
+artifactregistry.rules.delete		
+artifactregistry.rules.get		
+artifactregistry.rules.list		
 artifactregistry.rules.update
-artifactregistry.tags.create	Supported	
-artifactregistry.tags.delete	Supported	
-artifactregistry.tags.get	Supported	
-artifactregistry.tags.list	Supported	
-artifactregistry.tags.update	Supported	
-artifactregistry.versions.delete	Supported	
-artifactregistry.versions.get	Supported	
-artifactregistry.versions.list	Supported	
-artifactregistry.versions.update	Supported	
+artifactregistry.tags.create		
+artifactregistry.tags.delete		
+artifactregistry.tags.get		
+artifactregistry.tags.list		
+artifactregistry.tags.update		
+artifactregistry.versions.delete		
+artifactregistry.versions.get		
+artifactregistry.versions.list		
+artifactregistry.versions.update		
 artifactregistry.yumartifacts.create
-assuredoss.config.get	Supported	
-assuredoss.customers.create	Supported	
-assuredoss.locations.get	Supported	
-assuredoss.locations.list	Supported	
-assuredoss.metadata.get	Supported	
-assuredoss.metadata.list	Supported	
-assuredoss.operations.cancel	Supported	
-assuredoss.operations.delete	Supported	
-assuredoss.operations.get	Supported	
+assuredoss.config.get		
+assuredoss.customers.create		
+assuredoss.locations.get		
+assuredoss.locations.list		
+assuredoss.metadata.get		
+assuredoss.metadata.list		
+assuredoss.operations.cancel		
+assuredoss.operations.delete		
+assuredoss.operations.get		
 assuredoss.operations.list
-assuredworkloads.operations.get	Non-applicable 	
-assuredworkloads.operations.list	Non-applicable 	
-assuredworkloads.updates.list	Non-applicable 	
-assuredworkloads.updates.update	Non-applicable 	
-assuredworkloads.violations.get	Non-applicable 	
-assuredworkloads.violations.list	Non-applicable 	
-assuredworkloads.violations.update	Non-applicable 	
-assuredworkloads.workload.create	Non-applicable 	
-assuredworkloads.workload.delete	Non-applicable 	
+assuredworkloads.operations.get	 	
+assuredworkloads.operations.list	
+assuredworkloads.updates.list	 	
+assuredworkloads.updates.update 	
+assuredworkloads.violations.get	 	
+assuredworkloads.violations.list	 	
+assuredworkloads.violations.update		
+assuredworkloads.workload.create	 	
+assuredworkloads.workload.delete		
 assuredworkloads.workload.get
-assuredworkloads.workload.list	Non-applicable 	
-assuredworkloads.workload.update	Non-applicable 	
-auditmanager.auditReports.generate	Supported	
-auditmanager.auditReports.get	Supported	
-auditmanager.auditReports.list	Supported	
-auditmanager.auditScopeReports.generate	Supported	
-auditmanager.billingSettings.get	Supported	
-auditmanager.controlReports.get	Supported	
-auditmanager.controlReports.list	Supported	
+assuredworkloads.workload.list		
+assuredworkloads.workload.update	 	
+auditmanager.auditReports.generate		
+auditmanager.auditReports.get		
+auditmanager.auditReports.list		
+auditmanager.auditScopeReports.generate		
+auditmanager.billingSettings.get		
+auditmanager.controlReports.get		
+auditmanager.controlReports.list		
 auditmanager.controls.list
-auditmanager.customComplianceFrameworks.create	Supported	
-auditmanager.customComplianceFrameworks.delete	Supported	
-auditmanager.customComplianceFrameworks.get	Supported	
-auditmanager.customComplianceFrameworks.list	Supported	
-auditmanager.customComplianceFrameworks.update	Supported	
-auditmanager.findings.get	Supported	
-auditmanager.findings.list	Supported	
-auditmanager.locations.enrollResource	Supported	
-auditmanager.locations.get	Supported	
+auditmanager.customComplianceFrameworks.create		
+auditmanager.customComplianceFrameworks.delete		
+auditmanager.customComplianceFrameworks.get		
+auditmanager.customComplianceFrameworks.list		
+auditmanager.customComplianceFrameworks.update		
+auditmanager.findings.get		
+auditmanager.findings.list		
+auditmanager.locations.enrollResource		
+auditmanager.locations.get		
 auditmanager.locations.list
-auditmanager.operations.get	Supported	
-auditmanager.operations.list	Supported	
-auditmanager.resourceEnrollmentStatuses.get	Supported	
-auditmanager.resourceEnrollmentStatuses.list	Supported	
-automl.annotations.approve	Supported	
-automl.annotations.create	Supported	
+auditmanager.operations.get		
+auditmanager.operations.list		
+auditmanager.resourceEnrollmentStatuses.get		
+auditmanager.resourceEnrollmentStatuses.list		
+automl.annotations.approve		
+automl.annotations.create		
 automl.annotations.list	Supported	
-automl.annotations.manipulate	Supported	
-automl.annotations.reject	Supported	
+automl.annotations.manipulate		
+automl.annotations.reject		
 automl.annotationSpecs.create
-automl.annotationSpecs.delete	Supported	
-automl.annotationSpecs.get	Supported	
-automl.annotationSpecs.list	Supported	
-automl.annotationSpecs.update	Supported	
-automl.columnSpecs.get	Supported	
-automl.columnSpecs.list	Supported	
-automl.columnSpecs.update	Supported	
-automl.datasets.create	Supported	
-automl.datasets.delete	Supported	
+automl.annotationSpecs.delete		
+automl.annotationSpecs.get		
+automl.annotationSpecs.list		
+automl.annotationSpecs.update		
+automl.columnSpecs.get		
+automl.columnSpecs.list		
+automl.columnSpecs.update		
+automl.datasets.create		
+automl.datasets.delete		
 automl.datasets.export
-automl.datasets.get	Supported	
-automl.datasets.getIamPolicy	Supported	
-automl.datasets.import	Supported	
+automl.datasets.get		
+automl.datasets.getIamPolicy		
+automl.datasets.import		
 automl.datasets.list	Supported	
 automl.datasets.setIamPolicy	Supported	
 automl.datasets.update	Supported	
