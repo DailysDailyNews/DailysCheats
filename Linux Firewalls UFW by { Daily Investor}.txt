@@ -1,0 +1,50 @@
+Linux Firewalls "UFW" by { Daily Investors }
+
+1. When setting up any Linux, your first priority should be security.
+
+2. First Update and Upgrade { sudo apt update && sudo apt full-upgrade -y }
+
+3. Now Install "UFW" { sudo apt install ufw }
+
+4. Now to enable. { sudo ufw enable }
+
+5. Now to add or block essential connections. {
+  1. Allow ssh { sudo ufw allow 22/tcp or 22/udp }
+  2. Allow Http/s { sudo ufw allow http, sudo ufw allow https }
+  3. Set "Default" Policies. { sudo ufw default deny incoming}
+     { sudo ufw default deny outgoing }
+     { sudo ufw default allow outgoing }
+
+6. Check Status. { sudo ufw status verbose }
+
+7. Adding more rules. { sudo ufw allow from 555.555.5.555 }
+
+8. Allow from a specific IP {  sudo ufw allow from 555.555.5.555 to any port 3333 }
+
+9. Allowing Connections. { sudo ufw allow 53/udp }
+
+10. Deleting rules. 
+  1. By numbers. { sudo ufw status numbered }
+     1. Now delete by its number. { sudo ufw delete <number> }
+  2. By rule. { sudo ufw delete allow22/tcp }
+
+11. Limiting Rules { sudo ufw limit ssh }
+  1. Good protection for Brute-Force Attacks
+
+12. Using iptables with Limits
+  1. Iptables Limiter. { sudo iptables -A INPUT -p tcp --sport 80 -m state --state NEW -m recent --set --name HTTP_LIMIT --rsource }
+     { sudo iptables -A INPUT -p tcp --dport 80 -m state --state NEW -m recent --update --seconds 60 --hitcount 20 --rcheck --name HTTP_LIMIT --rsource -j DROP
+  2. To load the new rule sets. { sudo ufw reload }  
+
+13. Limit Ip Addresses
+  1. Edit rules
+     sudo nano /etc/ufw/before.rules
+  2. Add the following. 
+  *filter
+  :INPUT ACCEPT [0:0]
+  :FORWARD ACCEPT [0:0]
+  :OUTPUT ACCEPT [0:0]
+  - NEW -m recent --set --name PORT_8080 --rsource -A INPUT -p tcp --dport 8080 0m state --state NEW -m recent --update --seconds 60 --hitcount 30 --rcheck --name PORT_8080 --rsource -j          DROP
+
+14. Limiting New connections Per minute
+  1. Just apply a similar rule for port 4343
