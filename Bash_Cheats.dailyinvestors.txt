@@ -1,0 +1,82 @@
+~~~~~Bash Testing~~~~ by { Daily Investors }
+
+
+"Basic Navigation" Similar to Linux
+pwd, ls, -l, -a, -h, -r, -t, -i, cd, mkdir -p, rm {-r, -f, -i}, cp { -r, -p}, mv, touch, cat, less, head, tail { -n, -f}, find { -name, -type, -size, -mtime,
+-exec}, grep {-i, -r, -n, -v, -c, -A, -B}, chmod, chown, df -h, du {-h, -s}, ip a, ifconfig, netstat {-tuln, -p}, ping, traceroute, whois, dig, host, arp -a, nmap,
+curl, wget, ssh, scp, tcpdump, tshark, ngrep, uname -a, cat /etc/os-release, lsb_release -a, whoami, id, groups, history, ps { aux, grep}, top, htop, kill, bg, fg,
+jobs, systemctl, service.
+
+
+
+1. Setting a global variable
+function set_new_Bookmark() {
+  new_bookmark=$1
+}
+new_Bookmark="https://soloist.ai/dailyinvestors"
+echo new_bookmark
+
+set_new_Bookmark "DailysDailyNews"
+
+echo new_Bookmark
+
+
+2. Another form of "Shebang" and yes that's what She Said lol
+#!/usr/bin/bash
+#!/usr/env bash
+#!/bin/bash
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+print "Hello World from Perl\n";
+
+
+3. Print Keys
+for key in "${!score[0]}"; do
+  echo $key
+done
+
+
+4. Print Element Keys
+for val in "${!score[@]}"; do
+  echo $val
+done
+
+
+5. Get all files in Subdirectories
+for i in /tmp/*.log; do
+  echo $i
+done
+
+6. All Directories
+for i in /var/*; do
+  echo $(basename "$i")
+done
+
+
+7. While loop
+Note: on For Loops always ensure a Exit Plan
+x=1;
+while [ $x -le 5 ]; do
+  echo "Hello World"
+  ((x=x+1))
+done
+
+
+8. Return a status value from a function
+function echoMessage() {
+  if [ -z "$1" ]; then
+    return 22;
+  fi
+}
+
+9. Redirection
+>, <, >>, etc.
+
+10. Control Structure
+if, then, else, elif
+
+"For Loops"
+for, while, until.
